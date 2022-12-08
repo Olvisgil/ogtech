@@ -4,6 +4,6 @@ describe('sample render test', () => {
   });
 
   it('displays the title text', () => {
-    cy.get('h1').contains('Next.js Blog Theme');
+    cy.get('h1').contains('We help companies learn and integrate Web3/Blockchain Technology.');
   });
 });

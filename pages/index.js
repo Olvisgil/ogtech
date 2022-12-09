@@ -45,7 +45,7 @@ export default function Index({ posts, globalData }) {
           ))}
         </ul>
 
-    </div>
+    </main>
   )
 }
 

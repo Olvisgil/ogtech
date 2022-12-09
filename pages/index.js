@@ -6,6 +6,7 @@ import Layout, { GradientBackground } from '../components/Layout';
 import ArrowIcon from '../components/ArrowIcon';
 import { getGlobalData } from '../utils/global-data';
 import SEO from '../components/SEO';
+
 export default function Index({ posts, globalData }) {
   return (
     <Layout>
@@ -47,19 +48,7 @@ export default function Index({ posts, globalData }) {
     </div>
   )
 }
-      </main>
-      <Footer copyrightText={globalData.footerText} />
-      <GradientBackground
-        variant="large"
-        className="fixed top-20 opacity-40 dark:opacity-60"
-      />
-      <GradientBackground
-        variant="small"
-        className="absolute bottom-0 opacity-20 dark:opacity-10"
-      />
-    </Layout>
-  );
-}
+
 export function getStaticProps() {
   const posts = getPosts();
   const globalData = getGlobalData();
